@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="stylet.css" rel="stylesheet" type="text/css">
+    <title>JS Bin</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="progress-bar">
+          <div class="bar" data-size="100">
+            <span class="perc"></span>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    function loading() {
+  document.querySelectorAll(".bar").forEach(function(current) {
+    let startWidth = 0;
+    const endWidth = current.dataset.size;
+    const interval = setInterval(frame, 20);
+    function frame() {
+      if (startWidth >= endWidth) {
+        clearInterval(interval);
+      } else {
+          startWidth++;
+          current.style.width = `${endWidth}%`;
+          current.firstElementChild.innerText = `${startWidth}%`;
+        }
+     }
+  });
+}
+setTimeout(loading, 1000);
+</script>

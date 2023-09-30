@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/q-slim/png/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/q-slim/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/q-slim/png/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="144x144" href="/q-slim/png/android-chrome-144x144.png">
+    <link rel="manifest" href="/q-slim/png/site.webmanifest">
+    <link rel="mask-icon" href="/q-slim/png/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/q-slim/png/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/q-slim/png/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>register</title>
+  </head>
+  <body class="courseb" style="background-color:#FFFFFF;">
+    <div class="regbg"></div>
+    <img class="line" src="png/line1.png">
+    <img class="back" type="button" src="png/back.png" onclick="location.href='reg2.html'">
+    <div class="left"></div>
+    <div class="ask">
+      <span class="step">步驟1/4</span>
+      <span class="ques">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;您的體重是？</span>
+      <input type="number" name="height" id="height"/>
+      <div class="kilo">
+        <p class="kilo-Item">
+          <input type="radio" name="BannerTypes" id="BannerType1" value="true" class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+          <label for="BannerType1">
+            kg
+          </label>
+        </p>
+        <p class="kilo-Item">
+          <input type="radio" name="BannerTypes" id="BannerType2" value="false" class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+          <label for="BannerType2">
+            lb
+          </label>
+        </p>
+        <p class="kilo-Item">
+          <input type="radio" name="BannerTypes" id="BannerType3" value="false" class="ng-valid ng-dirty ng-touched ng-empty" aria-invalid="false">
+          <label for="BannerType3">
+            st
+          </label>
+        </p>
+      </div>
+      <span class="warn">*您的身高、體重以及相關數據將儲<br>存於您的設備且僅供您所使用</span>
+    </div>
+    <img class="stepc" src="png/s3.png">
+    <div class="next" onclick="location.href='regloading.html'">下一步</div>
+  </body>
+</html>
